@@ -1,3 +1,4 @@
+import 'package:auth/themeClass.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:geolocator/geolocator.dart';
@@ -17,7 +18,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: const LocationApp(),
-      theme: ThemeData(scaffoldBackgroundColor: Color(0xFFF2F2F2)),
+      themeMode: ThemeMode.system,
+      theme: ThemeClass.lightTheme,
+      darkTheme: ThemeClass.darkTheme,
     );
   }
 }

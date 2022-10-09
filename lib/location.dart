@@ -31,7 +31,7 @@ class _LocationAppState extends State<LocationApp> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Authenticator with Location"),
-        backgroundColor: Color(0xFF161C40),
+        // backgroundColor: Color(0xFF161C40),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -79,19 +79,19 @@ class _LocationAppState extends State<LocationApp> {
             },
             child: Text(
               "Open Scanner",
-              style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
+              style: TextStyle( fontWeight: FontWeight.bold),
             ),
           ),
         ],
       ),
       floatingActionButton: SpeedDial(
         animatedIcon: AnimatedIcons.menu_close,
-        backgroundColor: Color(0xFF161C40),
+        // backgroundColor: Color(0xFF161C40),
         children: [
           SpeedDialChild(
             child: Icon(Icons.qr_code_2_rounded),
             label: 'Scan a QR Code',
-            backgroundColor: Colors.cyan,
+            // backgroundColor: Colors.cyan,
             onTap: () => Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => const SecondRoute()),
@@ -100,7 +100,7 @@ class _LocationAppState extends State<LocationApp> {
           SpeedDialChild(
             child: Icon(Icons.keyboard),
             label: 'Enter a key manually',
-            backgroundColor: Colors.cyan,
+            // backgroundColor: Colors.cyan,
           )
         ],
       ),
